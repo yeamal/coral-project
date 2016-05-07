@@ -1,19 +1,48 @@
 {% extends "_base.html" %}
-
 {% block css %}
 <link rel="stylesheet" href="css/style.css">
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 {% endblock %}
-
+{% block scripts %}
+<script src="js/app.js"></script>
+{% endblock %}
 {% block content %}
 <div class="container">
-<div class="user-profile">
-	
+  	<div class="jumbotron"></div>
+  	<div class="user-profile">
+  		<div class="user-image-box">
+  			<img src="img/silhouette.png" class="user-image">
+  		</div>
+  		<div class="user-name">
+  			<h2>Jane Doe</h2>
+  			<h3>Washington, D.C.</h3>
+  		</div>
+  		<div class="user-info">
+  			<h3>My recent comments:</h3>
+  			<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et risus quis lacus pulvinar varius porttitor nec felis. Nullam nec risus eleifend, blandit enim ac, scelerisque arcu. Ut vel nunc gravida, ullamcorper orci non, pretium erat. Phasellus tempus pharetra leo, quis malesuada nisl posuere ut."</p>
+			<h3>My top story topics:</h3>
+			<div class="topics">
+				<span class="story-topic">Politics</span>
+				<span class="story-topic">Sports</span>
+				<span class="story-topic">Lifestyle</span>
+			</div>
+  		</div>
+  	</div>
+  	<div class="right-side">
+  		<h3>New story in <em>Politics</em>:</h3>
+  		<p>We noticed your interest in [Author]'s work and thought you might like to check out this story about [topic]</p>
+  		<p><em>"Ut vel nunc gravida, ullamcorper orci non, pretium erat. Phasellus tempus pharetra leo, quis malesuada nisl posuere ut."</em></p>
+  	</div>
+  	<div class="right-side">
+  		<h3>Upcoming event for <em>Sports</em> readers:</h3>
+  		<p>[Our organization] is hosting a free talk about the NFL draft next Sunday, May 14, at the Washington Public Library on K street.</p>
+  		<span class="story-topic">RSVP here</span>
+  	</div>
+  	<div class="right-side">
+  		<h3>This <em>Lifestyle</em> story has more than 100 comments</h3>
+  		<p>Want to add your voice to the discussion?</p>
+  	</div>
 </div>
-</div>
-
 {% endblock content %}
 
-{% block library_scripts %}
-{{ super() }}
-<script src="js/app.js"></script>
-{% endblock library_scripts %}

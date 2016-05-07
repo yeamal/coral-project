@@ -1,0 +1,99 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+	font-weight: 500;
+	margin: 0;
+	font-size: 24px;
+}
+
+h3 {
+	font-weight: 400;
+	margin: 10px 0 10px 0;
+	font-size: 20px;
+}
+
+.jumbotron {
+	background-color: white;
+}
+
+.jumbotron h1 {
+	font-size: 2.5em;
+	font-family: 'Roboto', sans-serif;
+}
+
+.story-topic {
+	list-style-type: none;
+	background-color: #d3d3d3;
+	padding: 5px 10px 5px 10px;
+	border-radius: 5px;
+	margin: 5px;
+}
+
+.story-topic:hover {
+	cursor: pointer;
+	background-color: #a3a3a3;
+}
+
+/* RIGHT SIDE CONTENT */
+.right-side {
+	display: inline-block;
+	width: 60%;
+	background-color: #f3f3f3;
+	border-right: 2px solid #d3d3d3;
+	border-bottom: 2px solid #d3d3d3;
+	margin: 0 0 20px 40px;
+	border-top-left-radius: 15px;
+	padding: 15px;
+}
+
+/* USER PROFILE */
+.topics {
+    margin-top: 20px;
+}
+
+.user-image {
+	width: 100%;
+	float: left;
+}
+
+.user-image-box {
+	width: 140px;
+	height: 140px;
+	border-radius: 5px;
+	background-color: black;
+	margin: 20px 10px 10px 20px;
+	display: inline-block;
+	float: left;
+}
+
+.user-info {
+	display: block;
+	width: 95%;
+	padding: 10px;
+	overflow: auto;
+	margin: 10px;
+}
+
+.user-info h3 {
+	margin: 0 0 10px 0;
+}
+
+.user-name {
+	display: inline-block;
+	float: left;
+	margin: 20px 10px 10px 20px;
+}
+
+.user-profile {
+	background-color: #f3f3f3;
+	border-right: 2px solid #d3d3d3;
+    width: 30%;
+    height: 800px;
+    min-width: 300px;
+    overflow: auto;
+    display: inline-block;
+    float: left;
+}
+
